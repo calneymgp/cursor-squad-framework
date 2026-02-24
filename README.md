@@ -44,12 +44,27 @@ O ciclo de desenvolvimento segue 5 fases rígidas:
 -   **Gestão**: Plane.so (via MCP).
 -   **AI Ops**: Cursor + MCP Server.
 
-## 🏁 Como Começar
+## 🏁 Quick Start (3 Steps)
 
-1.  **Configure o MCP**: Garanta que o servidor MCP do Plane e outros essenciais estejam rodando.
-2.  **Inicie uma Sessão**: Peça ao Tech Lead para iniciar uma nova feature.
-    > "Inicie o fluxo de descoberta para [Sua Ideia]"
-3.  **Siga o Processo**: Responda às perguntas do PM e deixe a squad trabalhar.
+### 1. Prepare o Terreno (Plane.so)
+O Plane é o coração deste sistema. Sem ele, a squad não opera.
+1. Crie uma conta no [Plane.so](https://plane.so/) e um novo Projeto.
+2. Gere uma **API Key** em `Profile > Settings > API Tokens`.
+3. Anote o `Project ID` (da URL ou settings) e o `Workspace Slug`.
+
+### 2. Ative o "Sistema Nervoso" (MCP)
+Configure o servidor MCP do Plane no seu Cursor (`Settings > Features > MCP`).
+Certifique-se de passar as variáveis de ambiente necessárias para o servidor funcionar:
+- `PLANE_API_KEY`: Seu token pessoal.
+- `PLANE_ORG_SLUG`: Slug do seu workspace.
+- `DEFAULT_PROJECT`: ID do projeto onde os tickets serão criados.
+
+### 3. Invoque o Squad
+Com tudo conectado, vá ao chat do Cursor (`Cmd+L` ou `Ctrl+L`) e digite:
+
+> "Inicie o fluxo de descoberta para [Sua Ideia de App]"
+
+O **Tech Lead** assumirá o comando, entrevistará você através do **PM**, e começará a criar a arquitetura e os tickets no Plane em tempo real.
 
 ---
 
