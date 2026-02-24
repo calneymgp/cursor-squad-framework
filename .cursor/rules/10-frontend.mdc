@@ -1,0 +1,23 @@
+---
+description: Padrões de desenvolvimento Frontend (Next.js, ShadCN, Tailwind).
+globs:
+  - "src/app/**/*"
+  - "src/components/**/*"
+alwaysApply: false
+---
+# Frontend Standards
+
+## Tecnologias
+- Next.js (App Router)
+- React (Server & Client Components)
+- ShadCN UI (componentes base)
+- Tailwind CSS
+
+## Regras
+1. **ShadCN-first**: Sempre use componentes do ShadCN antes de criar novos.
+2. **Componentes**: 
+   - Prefira Server Components por padrão.
+   - Use `'use client'` apenas quando necessário (interatividade, hooks).
+3. **Acessibilidade**: Use as primitives do Radix (via ShadCN).
+4. **Estados**: Trate explicitamente estados de `loading` (Skeleton) e `error` (Error Boundaries).
+5. **Forms**: Use `react-hook-form` + `zod` para validação.

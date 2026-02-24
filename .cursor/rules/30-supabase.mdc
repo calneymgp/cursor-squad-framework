@@ -1,0 +1,18 @@
+---
+description: Padrões de banco de dados e segurança Supabase.
+globs:
+  - "supabase/**/*"
+  - "src/lib/supabase/**/*"
+alwaysApply: false
+---
+# Supabase & Database Standards
+
+## Segurança (RLS)
+1. **RLS Obrigatório**: Nenhuma tabela deve estar sem Row Level Security.
+2. **Políticas**: Defina políticas claras para `SELECT`, `INSERT`, `UPDATE`, `DELETE`.
+3. **Service Role**: Nunca use a `service_role` key no frontend.
+
+## Schema
+1. **Migrations**: Se houver Supabase CLI, use migrations para mudanças de schema.
+2. **Tipagem**: Mantenha os tipos do TypeScript sincronizados com o banco.
+3. **Convenção**: Use `snake_case` para nomes de tabelas e colunas.

@@ -1,0 +1,14 @@
+---
+description: Padrões para engenharia de dados, ETL e Scraping.
+globs:
+  - "src/data/**/*"
+  - "src/scripts/scrapers/**/*"
+alwaysApply: false
+---
+# Data Engineering Standards
+
+## ETL & Scraping
+1. **Idempotência**: Jobs de ETL devem ser reexecutáveis.
+2. **Armazenamento**: Salve o dado bruto (raw) antes de processar (processed).
+3. **Scraping Ético**: Respeite `robots.txt`, use delays e trate bloqueios (rate limit).
+4. **Qualidade**: Valide os dados após o processamento.

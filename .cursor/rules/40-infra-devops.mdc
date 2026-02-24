@@ -1,0 +1,18 @@
+---
+description: Configurações de infraestrutura, Docker e Coolify.
+globs:
+  - "**/Dockerfile"
+  - "**/docker-compose.yml"
+  - ".coolify/**/*"
+alwaysApply: false
+---
+# Infra & DevOps Standards
+
+## Docker & Coolify
+1. **Dockerfiles**: Use multi-stage builds para imagens leves.
+2. **Env Vars**: Nunca commite segredos. Use `.env.example`.
+3. **Coolify**: Configure o deploy automático para branches específicas.
+
+## Segurança & Rede
+1. **Cloudflare**: Utilize Zero Trust para acesso administrativo.
+2. **Logs**: Garanta que a aplicação emita logs estruturados para observabilidade.

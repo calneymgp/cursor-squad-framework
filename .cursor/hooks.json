@@ -1,0 +1,7 @@
+{
+  "version": "1",
+  "hooks": {
+    "beforeShellExecution": ".cursor/hooks/before-shell-execution.mjs",
+    "stop": ".cursor/hooks/stop-worklog.mjs"
+  }
+}

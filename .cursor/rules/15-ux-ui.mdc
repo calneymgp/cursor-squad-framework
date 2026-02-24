@@ -1,0 +1,31 @@
+---
+description: Padrões de UX, UI e Design System para garantir qualidade 'Unicorn'.
+globs:
+  - "src/app/**/*"
+  - "src/components/**/*"
+  - "tailwind.config.ts"
+alwaysApply: false
+---
+# UX/UI Excellence Standards
+
+## Princípios Visuais
+1. **Consistência**: Use rigorosamente o sistema de cores e espaçamentos do Tailwind.
+2. **Hierarquia**: Use tipografia e pesos para guiar o olho do usuário para as ações principais (CTAs).
+3. **Contraste**: Garanta legibilidade em todos os temas (Dark/Light mode).
+
+## Usabilidade & UX
+1. **Feedback Imediato**: Toda ação deve ter um feedback visual (Toasts, Spinners, Skeletons).
+2. **Lei de Fitts**: Elementos clicáveis devem ter tamanhos adequados e espaçamento correto.
+3. **Empty States**: Nunca deixe uma tela vazia sem uma explicação ou call-to-action.
+4. **Error Handling Visual**: Erros devem ser explicativos e nunca quebrar a interface (use Error Boundaries).
+
+## Tech Stack Design
+- **Framer Motion**: Use para transições suaves de página e estados de componentes.
+- **Lucide React**: Ícones consistentes e minimalistas.
+- **ShadCN Customization**: Modifique o `globals.css` e `tailwind.config.ts` para elevar a estética base.
+
+## DoD Visual
+- [ ] O componente parece "premium"?
+- [ ] As margens e paddings estão equilibrados?
+- [ ] A animação de entrada/saída é suave?
+- [ ] Funciona bem no mobile?

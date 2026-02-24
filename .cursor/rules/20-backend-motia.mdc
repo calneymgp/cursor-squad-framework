@@ -1,0 +1,18 @@
+---
+description: Padrões de desenvolvimento Backend usando Motia Steps.
+globs:
+  - "src/steps/**/*"
+  - "src/api/**/*"
+alwaysApply: false
+---
+# Backend Motia Standards
+
+## Core Concept: Steps
+O backend é organizado em **Steps**, que são as primitivas para APIs, jobs e workflows.
+
+## Regras
+1. **Organização**: Cada funcionalidade deve estar em seu próprio Step.
+2. **Validação**: Todo Step deve validar inputs usando `zod`.
+3. **Eventos**: Use o sistema de eventos do Motia para desacoplar lógica.
+4. **Integração Supabase**: Use o cliente oficial para interagir com o DB.
+5. **Idempotência**: Garanta que Steps críticos possam ser reexecutados com segurança.
