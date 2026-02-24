@@ -59,12 +59,12 @@ Certifique-se de passar as variáveis de ambiente necessárias para o servidor f
 - `PLANE_ORG_SLUG`: Slug do seu workspace.
 - `DEFAULT_PROJECT`: ID do projeto onde os tickets serão criados.
 
-### 3. Invoque o Squad
+### 3. Invoque o Squad (Auto Mode)
 Com tudo conectado, vá ao chat do Cursor (`Cmd+L` ou `Ctrl+L`) e digite:
 
-> "Inicie o fluxo de descoberta para [Sua Ideia de App]"
+> **`/auto` "Inicie o fluxo de descoberta para [Sua Ideia de App]"**
 
-O **Tech Lead** assumirá o comando, entrevistará você através do **PM**, e começará a criar a arquitetura e os tickets no Plane em tempo real.
+O comando **`/auto`** é o gatilho principal deste framework. Ele instrui o Cursor a entrar no modo de orquestração autônoma, onde o **Tech Lead** assume o comando total, entrevistando você através do **PM**, criando a arquitetura e os tickets no Plane, e coordenando os agentes de Dev e QA para entregar a solução completa sem microgerenciamento.
 
 ---
 
